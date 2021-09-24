@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', 'Roboto', 'Ubuntu', sans-serif;
+    /* background: #2f2fa2; */
 }
 html{
     font-size: 62.5%;
@@ -44,13 +45,13 @@ html{
    
 }
 .nav-links li a:hover{
-    color: #fff;
+    color: #777;
 }
 .nav-links li a{
     padding: 0 1rem;
     font-size: 2rem;
     padding: 2rem;
-    color: #777;
+    color: #fff;
     transition: all .3s ease;
 }
 
@@ -114,6 +115,20 @@ i.fa-bars{
 
 /* media query  fr the navigation on small devices*/
 
+@media (max-width:1100px) {
+    .header{
+        width: 100%;
+        box-shadow: 0 0 0 2px #888;
+    }
+}
+@media (max-width:950px) {
+    .header{
+        width: 100%;
+        box-shadow: 0 0 0 2px #888;
+    }
+    
+   
+}
 @media (max-width:900px) {
     .header{
         width: 100%;
@@ -307,6 +322,7 @@ button.login-btn{
 
 /* mobile resposiveness */
 
+
 @media (max-width:902px) {
     .section-signupreg{
         min-height: 6rem;
@@ -392,5 +408,114 @@ button.login-btn{
     }
     .login{
         padding: 0 2rem 0 0;
+    }
+}
+
+
+
+/* Home section styling */
+
+.main-home-section{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    transform: translateY(30%);
+    
+}
+.section-text{
+    padding-right: 2rem;
+}
+.section-text h1{
+    font-size: 3rem;
+    color: #8EE4AF;
+}
+.section-image{
+    padding-left: 3rem;
+}
+.section-image img{
+    width: 28rem;
+    height: 28rem;
+    transform: translateX(-80%);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.section-text p.info-minor{
+    font-size: 2rem;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    padding:  2rem 0 5.5rem 0;
+}
+.section-text p.linklogs a.links1,
+.section-text p.linklogs a.link2,
+.section-text p.linklogs {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+.section-text p.linklogs{
+    padding: 0;
+}
+.section-text p.linklogs a.links1{
+    background-color: #4AB3A3;
+    border-radius: 2rem;
+    transition: all .3s ease-in-out;
+}
+.section-text p.linklogs a.links1:hover{
+    background-color: #fff;
+    color: #4AB3A3;
+    border: 1px solid #4AB3A3;
+}
+.section-text p.linklogs a.link2{
+    color: #4AB3A3;
+    background-color: #fff;
+    border-radius: 2rem;
+    border: 1px solid #4AB3A3;
+
+}
+.section-text p.linklogs a.link2:hover{
+    background-color: #4AB3A3;
+    transition: all .3s ease-in-out;
+    color: #fff;
+}
+
+
+
+/* main body section styling for the welcoming note */
+
+
+@media (max-width:1100px) {
+    .main-home-section{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section-text{
+        padding: 0 2rem;
+        transform: translateX(13%);
+    }
+    .section-text h1{
+        font-size: 2rem;
+    }
+    .section-image img{
+        transform: translateX(-30%);
+    }
+}
+@media (max-width:950px) {
+    body{
+        /* background:linear-gradient(rgba(0,0,0,.9), rgba(0, 0, 0, .8)), url('../trial/images/classes.jpg'); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        min-height: 100vh;
+    }
+    .main-home-section{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .section-image img{
+        /* transform: translateX(-30%); */
+        display: none;
     }
 }
