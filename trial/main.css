@@ -519,3 +519,22 @@ button.login-btn{
         display: none;
     }
 }
+@media (max-width:400px) {
+    .main-home-section{
+        width: 90%;
+    }
+    .section-text{
+        transform: translateY(-20%);
+        padding: 0 3rem;
+    }
+    .section-text h1{
+        font-size: 1.5rem;
+    }
+    .section-text p.info-minor{
+        font-size: 1.5rem;
+    }
+    .section-text p.linklogs a{
+        padding: .5rem 1.5rem;
+        display: block;
+    }
+}
